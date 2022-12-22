@@ -1,1 +1,1 @@
-# CNN_Real_Estate_Offices_Properties_Listing
+# Multi-label classification of real estate offices' properties using Convolutional Neural Networks (CNN)
