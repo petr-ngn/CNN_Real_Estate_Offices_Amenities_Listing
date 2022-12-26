@@ -1,5 +1,5 @@
 # Multi-label classification of real estate offices' amenities using Convolutional Neural Network (CNN)
-Within the course Trends in business analytics I (4IZ481), we had to introduce a business solution of unstructured data usage with partial implementation in Python. Our team came up with a solution which combines both image processing and natural language processing.
+Within the course _**Trends in business analytics I (4IZ481)**_, we had to introduce a business solution of unstructured data usage with partial implementation in Python. Our team came up with a solution which combines both image processing and natural language processing.
 
 Particularly, based on our research, we introduced a model for object detection which helps to detect and recognize the real estates' amenities and then outputs a list of amenities which given real estate has, based on the provided real-estate pictures. Afterwards, such predicted amenities' lists are used as keywords for text generator of property listing within real-estate advertisement.
 
