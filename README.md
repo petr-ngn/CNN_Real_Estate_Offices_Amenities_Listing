@@ -1,4 +1,8 @@
 # Multi-label classification of real estate offices' amenities using Convolutional Neural Network (CNN)
+
+_**Team:**_ [**Petr Nguyen**](https://www.linkedin.com/in/petr-ngn/), [**Ilya Tsakunov**](https://www.linkedin.com/in/ilya-tsakunov-14192620b/), [**Peter Kachnic**](https://www.linkedin.com/in/peterkachnic/), [**Katerina Nekvindova**](https://www.linkedin.com/in/kateřina-nekvindová-119050178/), [**Adrian Harvan**](https://www.linkedin.com/in/adrian-harvan/), [**Simona Dohova**](https://www.linkedin.com/in/simona-dohová-182427153/), **Marco Vezzola**
+
+
 Within the course _**Trends in business analytics I (4IZ481)**_, we had to introduce a business solution of unstructured data usage with partial implementation in Python. Our team came up with a solution which combines both image processing and natural language processing.
 
 Particularly, based on our research, we introduced a model for object detection which helps to detect and recognize the real estates' amenities and then outputs a list of amenities which given real estate has, based on the provided real-estate pictures. Afterwards, such predicted amenities' lists are used as keywords for text generator of property listing within real-estate advertisement.
