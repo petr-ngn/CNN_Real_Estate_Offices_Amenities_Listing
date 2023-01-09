@@ -37,7 +37,7 @@ Within the evaluation, we averaged the predicted probabilities to get aggregated
 
 The main output of this project is a list of predicted amenities, which given offices should have. Such lists can be then used as an input, as already mentioned, for a text generator of property listing within real-estate advertisement.
 
-!![image.png](https://drive.google.com/uc?export=view&id=1bSbYl0LW5-Zg5_dgKcCa8jWiYPcHcnUo)
+![alt_text](https://drive.google.com/uc?export=view&id=1bSbYl0LW5-Zg5_dgKcCa8jWiYPcHcnUo)
 
 For the further development, we recommend following:
 - Use pictures with a better quality and higher resolution
