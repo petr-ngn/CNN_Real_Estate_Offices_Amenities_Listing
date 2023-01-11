@@ -6,13 +6,13 @@ Within the course __*Trends in business analytics I (4IZ481)*__ at Faculty of In
 
 Particularly, based on our research, we introduced a model for object detection which helps to detect and recognize the real estates' amenities and then outputs a list of amenities which given real estate has, based on the provided real-estate pictures. Afterwards, such predicted amenities' lists are used as keywords for text generator of property listing within real-estate advertisement.
 
-![alt_text](https://drive.google.com/uc?export=view&id=1AN7g0RGtmGN5UIm-Ilnx2SgFsPBZ7UdJ)
+![alt_text](https://raw.githubusercontent.com/petr-ngn/CNN_Real_Estate_Offices_Amenities_Listing/main/illustration_pics/image_01.png)
 
 We were provided with web-scrapped dataset of German offices' pictures and CSV file with the annotations, which contains 457 offices and 15 types of amenities.
 
-![alt_text](https://drive.google.com/uc?export=view&id=1v1UJ0qyIL-AGP1XnTCPNFg0zhR8Vmh3d)
+![alt_text](https://raw.githubusercontent.com/petr-ngn/CNN_Real_Estate_Offices_Amenities_Listing/main/illustration_pics/image_02.png)
 
-![alt_text](https://drive.google.com/uc?export=view&id=12qGrkwY-d0LRgslVpxLLFfY-zgaWSQG3)
+![alt_text](https://raw.githubusercontent.com/petr-ngn/CNN_Real_Estate_Offices_Amenities_Listing/main/illustration_pics/image_03.png)
 
 Our partial Python solution regarded an image processing of real-estate amenities using Keras and Tensorflow. After image processing such as loading the pictures as 3D arrays with further reshaping, normalization and tensor conversion, we split them into training set for model building and weight optimization, validation set for hyperparameter tuning and optimization, and test set for the model evaluation.
 
@@ -27,17 +27,17 @@ We developed a custom Convolutional Neural Network (CNN) for multi-label clasiff
 
 Such developed and optimized model also includes batch normalization layers and uses sigmoid function for multilabel-classification (assuming the predicted probabilities are independent) and is visualized below with following tuned hyperparameters.
 
-![alt_text](https://drive.google.com/uc?export=view&id=1dNweZjb49N3rURWxbqetAMWxdHDK7v9u)
+![alt_text](https://raw.githubusercontent.com/petr-ngn/CNN_Real_Estate_Offices_Amenities_Listing/main/illustration_pics/image_04.png)
 
 ![alt_text](https://github.com/petr-ngn/CNN_Real_Estate_Offices_Amenities_Listing/blob/main/plots/Model/CNN_PN__Visual_Keras.png?raw=true)
 
 Within the evaluation, we averaged the predicted probabilities to get aggregated probabilities on the office level, which were then used for a classification of the amenities' occurrences. By taking the predicted amenities' occurrences (predicted labels) or the predicted probabilities and the actual amenities occurrences (true labels), we calculate overall metrics F1 score, accuracy, precision, recall or AUC. For instance, the following graph depicts an AUC scores' distribution across the amenities and samples.
 
-![alt_text](https://drive.google.com/uc?export=view&id=13NxjZ2uyBLjShkpIdNYR5ux_Ec08djpu)
+![alt_text](https://raw.githubusercontent.com/petr-ngn/CNN_Real_Estate_Offices_Amenities_Listing/main/illustration_pics/image_05.png)
 
 The main output of this project is a list of predicted amenities, which given offices should have. Such lists can be then used as an input, as already mentioned, for a text generator of property listing within real-estate advertisement.
 
-![alt_text](https://drive.google.com/uc?export=view&id=1bSbYl0LW5-Zg5_dgKcCa8jWiYPcHcnUo)
+![alt_text](https://raw.githubusercontent.com/petr-ngn/CNN_Real_Estate_Offices_Amenities_Listing/main/illustration_pics/image_06.png)
 
 For the further development, we recommend following:
 - Use pictures with a better quality and higher resolution
