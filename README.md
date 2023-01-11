@@ -42,7 +42,7 @@ The main output of this project is a list of predicted amenities, which given of
 For the further development, we recommend following:
 - Use pictures with a better quality and higher resolution
 - Proper pictures' selection - use only relevant pictures (*we do not want model train on non-relevant pictures such as a picture of a building from the outside etc*).
-- Increase training and validation size (*in order to increase model model performance*)
+- Increase training and validation size (*in order to increase model performance*)
 - Perform an image augmentations - especially for the offices' pictures having such amenities which do not occur that often in the dataset (*in order to deal with imbalanced classes*).
 - Re-definition of amenities labels (*some amenities are hardly observed from pictures*).
 - Choosing a different, ideally an optimal, threshold for classification of amenities' occurrences.
