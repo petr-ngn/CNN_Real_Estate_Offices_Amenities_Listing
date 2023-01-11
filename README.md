@@ -16,14 +16,13 @@ We were provided with web-scrapped dataset of German offices' pictures and CSV f
 
 Our partial Python solution regarded an image processing of real-estate amenities using Keras and Tensorflow. After image processing such as loading the pictures as 3D arrays with further reshaping, normalization and tensor conversion, we split them into training set for model building and weight optimization, validation set for hyperparameter tuning and optimization, and test set for the model evaluation.
 
-We developed a custom Convolutional Neural Network (CNN) for multi-label clasiffication in order to predict a probability score for each amenity's occurrence of given office. We optimized CNN's hyperparameters with Bayesian Optimization while minizing a binary cross entropy loss function, where we tuned:
+We developed a custom Convolutional Neural Network (CNN) for multi-label classification in order to predict a probability score for each amenity's occurrence of given office. We optimized CNN's hyperparameters with Bayesian Optimization while minimizing a binary cross entropy loss function, where we tuned:
 - the number of convolutional blocks,
 - the value of the filters within a single convolution,
 - the type of the pooling (whether use Max Pooling or Average Pooling),
 - the number of units in the dense layer,
 - the value of the dropout rate in the dropout layer as a regularization constraint with respect to the overfitting,
-- the value of the learning rate of stochastic gradient descent method namely
--nud, namely Adaptive Moment Estimation (Adam) optimizer.
+- the value of the learning rate of stochastic gradient descent method, namely the Adaptive Moment Estimation (Adam) optimizer.
 
 Such developed and optimized model also includes batch normalization layers and uses sigmoid function for multilabel-classification (assuming the predicted probabilities are independent) and is visualized below with following tuned hyperparameters.
 
